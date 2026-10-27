@@ -25,4 +25,4 @@ server:
     info:
       access: unrestricted
 app:
-  message: "Hello from Config Server"
+  message: "Refresh test Successfully"
