@@ -24,3 +24,5 @@ server:
   endpoint:
     info:
       access: unrestricted
+  app:
+  message: "Hello from Config Server"
