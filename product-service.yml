@@ -1,14 +1,18 @@
+
 spring:
   application:
     name: product-service
-
-
-
 
   datasource:
     url: jdbc:mysql://host.docker.internal:3306/ecommerce_product_db
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
 
   jpa:
     hibernate:
@@ -21,9 +25,10 @@ spring:
 server:
   port: 8081
 
-
+management:
   endpoint:
     info:
       access: unrestricted
+
 app:
   message: "Refresh test Successfully"
